@@ -1,0 +1,9 @@
+import Shape
+
+
+class Square(Shape):
+    def __init__(self, color, side):
+        self.__side = side
+        s = self.__side * self.__side
+        p = self.__side * 4
+        super().__init__(color, s, p)
