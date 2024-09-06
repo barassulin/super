@@ -1,0 +1,10 @@
+import Shape
+
+
+class Rectangle(Shape):
+    def __init__(self, color, side1, side2):
+        self.__side1 = side1
+        self.__side2 = side2
+        s = self.__side1 * self.__side2
+        p = self.__side1*2 + self.__side2*2
+        super().__init__(color, s, p)
