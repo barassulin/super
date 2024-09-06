@@ -1,0 +1,13 @@
+import Shape
+
+
+class Circle(Shape):
+    def __init__(self, color, radius):
+        self.__radius = radius
+        s = self.__radius * self.__radius * 3.14
+        p = self.__radius * 2 * 3.14
+
+        super().__init__(color, s, p)
+
+
+
