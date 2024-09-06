@@ -1,0 +1,31 @@
+"""
+Cubes of map - by Bar Assulin
+Date: 31/5/24
+"""
+
+
+class Shape:
+    def __init__(self, color, s, p):
+        self.color = color
+        self.s = s
+        self.p = p
+
+    def get_color(self, color):
+        self.color = color
+
+    def return_color(self):
+        return self.color
+
+    def return_s(self):
+        return self.s
+
+    def return_p(self):
+        return self.p
+
+    def add(self, shape):
+        if hasattr(shape, "radius"):
+            new = Shape(self.color, self.s, self.p)
+        else:
+            new = Shape((self.color + shape.get_color())/2, self.s + shape.return_s(), self.p + shape.return_p())
+        return new
+
