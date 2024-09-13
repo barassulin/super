@@ -1,3 +1,8 @@
+"""
+shapes - by Bar Assulin
+Date: 13/9/24
+"""
+
 import Shape
 
 
@@ -6,8 +11,7 @@ class Circle(Shape):
         self.__radius = radius
         s = self.__radius * self.__radius * 3.14
         p = self.__radius * 2 * 3.14
-
         super().__init__(color, s, p)
 
-
-
+    def add(self, shape):
+        return None
