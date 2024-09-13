@@ -1,6 +1,6 @@
 """
-Cubes of map - by Bar Assulin
-Date: 31/5/24
+shapes - by Bar Assulin
+Date: 13/9/24
 """
 
 
@@ -28,4 +28,3 @@ class Shape:
         else:
             new = Shape((self.color + shape.get_color())/2, self.s + shape.return_s(), self.p + shape.return_p())
         return new
-
